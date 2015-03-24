@@ -1,0 +1,10 @@
+.mission-img {
+    background-image: url(/snow.jpg);
+    padding-top: 210px;
+    background-size: cover;
+    background-position: center center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    display: block;
+}
