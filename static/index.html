@@ -136,6 +136,11 @@
           All work and no play makes Jack...
         </div><!-- col -->
       </div><!-- row -->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="chart_div"><div>
+        </div><!-- col -->
+      </div><!-- row -->
 
     </div><!-- container-fluid -->
 
@@ -145,7 +150,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi">
+    </script>
     <script type="text/javascript">
-    </script>  
+      google.load('visualization', '1', {packages: ['corechart', 'bar']});
+google.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Month');
+      data.addColumn('number', 'Hours available');
+
+      data.addRows([
+        ['Apr 2015', 0],
+        ['May 2015', 60],
+        ['Jun 2015', 80],
+        ['Jul 2015', 120],
+        ['Aug 2015', 110],
+        ['Sep 2015', 120],
+        ['Oct 2015', 120],
+        ['Nov 2015', 120],
+        ['Dec 2015', 80],
+      ]);
+
+      var options = {
+        title: 'Current availability',
+        hAxis: {
+          title: 'Month',
+        },
+        vAxis: {
+          title: 'Hours available'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+    </script>
   </body>
 </html>
