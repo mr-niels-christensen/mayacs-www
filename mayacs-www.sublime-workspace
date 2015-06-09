@@ -43,7 +43,7 @@
 			"file": "static/index.html",
 			"settings":
 			{
-				"buffer_size": 4177,
+				"buffer_size": 8331,
 				"line_ending": "Unix"
 			}
 		},
@@ -51,17 +51,9 @@
 			"file": "static/custom.css",
 			"settings":
 			{
-				"buffer_size": 297,
+				"buffer_size": 432,
 				"line_ending": "Unix",
 				"name": ".mission-img {"
-			}
-		},
-		{
-			"file": "/Users/nc/git/environment-scotland-dot-rural/src/main/frontend/search.html",
-			"settings":
-			{
-				"buffer_size": 13438,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -102,18 +94,20 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/nc/git/mayacs-www",
-		"/Users/nc/git/mayacs-www/static"
+		"/Users/nhc/git/mayacs-www",
+		"/Users/nhc/git/mayacs-www/static"
 	],
 	"file_history":
 	[
+		"/Users/nhc/git/mayacs-www/static/may-sky.png",
+		"/Users/nhc/git/mayacs-www/static/may.jpg",
+		"/Users/nc/git/environment-scotland-dot-rural/src/main/frontend/search.html",
 		"/Users/nc/git/environment-scotland-dot-rural/docs/md/investigating-failures.md",
 		"/Users/nc/git/environment-scotland-dot-rural/docs/README.md",
 		"/Users/nc/git/environment-scotland-dot-rural/src/main/frontend/search-results.js",
 		"/Users/nc/git/environment-scotland-dot-rural/src/main/frontend/search-history.js",
 		"/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/google/appengine/api/search/search.py",
 		"/Users/nc/git/environment-scotland-dot-rural/src/main/dotruralsepake/search_handler.py",
-		"/Users/nc/git/environment-scotland-dot-rural/src/main/frontend/search.html",
 		"/Users/nc/git/environment-scotland-dot-rural/src/main/frontend/sparql-backend/seed.sparql.txt",
 		"/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/google/pyglib/singleton.py",
 		"/Users/nc/git/environment-scotland-dot-rural/src/main/frontend/focus-description.js",
@@ -155,7 +149,7 @@
 	],
 	"find":
 	{
-		"height": 44.0
+		"height": 43.0
 	},
 	"find_in_files":
 	{
@@ -229,15 +223,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4177,
+						"buffer_size": 8331,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3758,
-								3758
+								3243,
+								3243
 							]
 						],
 						"settings":
@@ -247,7 +241,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 158.0,
+						"translation.y": 2366.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -259,58 +253,29 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 297,
+						"buffer_size": 432,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								273,
-								273
+								371,
+								382
 							]
 						],
 						"settings":
 						{
 							"auto_name": ".mission-img {",
 							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 42.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/nc/git/environment-scotland-dot-rural/src/main/frontend/search.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13438,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1847,
-								1854
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3971.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -435,7 +400,7 @@
 		[
 			[
 				"",
-				"~/git/rdflib-appengine/rdflib-appengine.sublime-project"
+				"~/csisworkspace/swept.sublime-project"
 			]
 		],
 		"width": 380.0
