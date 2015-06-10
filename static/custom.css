@@ -13,6 +13,9 @@
     padding-top: 60px;
 }
 
+.row .odd {
+    background-color: #DCDCDC;
+}
 .reversed {
     unicode-bidi:bidi-override;
     direction: rtl;
