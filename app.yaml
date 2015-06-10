@@ -9,8 +9,8 @@ handlers:
 - url: /$
   static_files: static/index.html
   upload: static/index.html
-- url: /(.*\.(html|js|css|png|jpg))$
+- url: /(.*\.(html|js|css|png|jpg|jpeg))$
   static_files: static/\1
-  upload: static/.*\.(html|js|css|png|jpg)$
+  upload: static/.*\.(html|js|css|png|jpg|jpeg)$
 
   
