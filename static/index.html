@@ -267,21 +267,29 @@
       google.load('visualization', '1', {packages: ['corechart', 'bar']});
 google.setOnLoadCallback(drawBasic);
 
+function addAdjusted(data, monthNo, monthName, hours) {
+  var d = new Date();
+  var currentMonthNo = d.getMonth() + 1;//0-indexed in JS
+  if (monthNo >= currentMonthNo) {
+    var hoursAdjusted = (monthNo == currentMonthNo) ? Math.ceil(hours*d.getDate()/31) : hours;
+    data.addRow([monthName, hoursAdjusted]);
+  }
+}
+
 function drawBasic() {
 
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Month');
       data.addColumn('number', 'Hours');
 
-      data.addRows([
-        ['Jun', 30],
-        ['Jul', 90],
-        ['Aug', 110],
-        ['Sep', 120],
-        ['Oct', 120],
-        ['Nov', 120],
-        ['Dec', 80],
-      ]);
+      addAdjusted(data, 5, 'Jun', 200);
+      addAdjusted(data, 6, 'Jun', 30);
+      addAdjusted(data, 7, 'Jul', 90);
+      addAdjusted(data, 8, 'Aug', 110);
+      addAdjusted(data, 9, 'Sep', 120);
+      addAdjusted(data, 10, 'Oct', 120);
+      addAdjusted(data, 11, 'Nov', 120);
+      addAdjusted(data, 12, 'Dec', 80);
 
       var options = {
         title: '2015 availability',
