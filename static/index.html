@@ -271,7 +271,7 @@ function addAdjusted(data, monthNo, monthName, hours) {
   var d = new Date();
   var currentMonthNo = d.getMonth() + 1;//0-indexed in JS
   if (monthNo >= currentMonthNo) {
-    var hoursAdjusted = (monthNo == currentMonthNo) ? Math.ceil(hours*d.getDate()/31) : hours;
+    var hoursAdjusted = (monthNo == currentMonthNo) ? Math.ceil(hours*(31 - d.getDate())/31) : hours;
     data.addRow([monthName, hoursAdjusted]);
   }
 }
