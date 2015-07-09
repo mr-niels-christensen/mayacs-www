@@ -59,7 +59,7 @@
 			"file": "static/index.html",
 			"settings":
 			{
-				"buffer_size": 14407,
+				"buffer_size": 14414,
 				"line_ending": "Unix"
 			}
 		},
@@ -240,15 +240,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 14407,
+						"buffer_size": 14414,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13827,
-								13827
+								13309,
+								13309
 							]
 						],
 						"settings":
@@ -258,7 +258,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10134.0,
+						"translation.y": 9553.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -417,7 +417,7 @@
 		[
 			[
 				"",
-				"~/csisworkspace/swept.sublime-project"
+				"~/git/finna-be-octo-archer/briefme/briefme.sublime-project"
 			]
 		],
 		"width": 380.0
