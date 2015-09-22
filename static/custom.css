@@ -16,6 +16,11 @@
 .row .odd {
     background-color: #DCDCDC;
 }
+
+.row .img-circle {
+    margin: 1em;
+}
+
 .reversed {
     unicode-bidi:bidi-override;
     direction: rtl;
