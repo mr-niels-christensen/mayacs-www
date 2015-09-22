@@ -21,6 +21,12 @@
     margin: 1em;
 }
 
+#selfie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .reversed {
     unicode-bidi:bidi-override;
     direction: rtl;
