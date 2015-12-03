@@ -124,11 +124,6 @@
           <img id="selfie" class="img-rounded img-responsive" src="niels.jpg">
         </div><!-- col -->
       </div><!-- row -->
-      <div class="row"><!-- Availability -->
-        <div class="col-xs-12">
-          <div id="chart_div"><div>
-        </div><!-- col -->
-      </div><!-- row -->
       <div class="row odd"><!-- Project -->
         <div class="col-xs-12">
           <h4>
@@ -236,48 +231,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi">
-    </script>
-    <script type="text/javascript">
-      google.load('visualization', '1', {packages: ['corechart', 'bar']});
-google.setOnLoadCallback(drawBasic);
-
-function addAdjusted(data, monthNo, monthName, hours) {
-  var d = new Date();
-  var currentMonthNo = d.getMonth() + 1;//0-indexed in JS
-  if (monthNo >= currentMonthNo) {
-    var hoursAdjusted = (monthNo == currentMonthNo) ? Math.ceil(hours*(31 - d.getDate())/31) : hours;
-    data.addRow([monthName, hoursAdjusted]);
-  }
-}
-
-function drawBasic() {
-
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Month');
-      data.addColumn('number', 'Hours');
-
-      addAdjusted(data, 5, 'Jun', 200);
-      addAdjusted(data, 6, 'Jun', 30);
-      addAdjusted(data, 7, 'Jul', 90);
-      addAdjusted(data, 8, 'Aug', 110);
-      addAdjusted(data, 9, 'Sep', 120);
-      addAdjusted(data, 10, 'Oct', 120);
-      addAdjusted(data, 11, 'Nov', 120);
-      addAdjusted(data, 12, 'Dec', 80);
-
-      var options = {
-        title: '2015 availability',
-        hAxis: {
-          title: 'Month',
-        }
-      };
-
-      var chart = new google.visualization.ColumnChart(
-        document.getElementById('chart_div'));
-
-      chart.draw(data, options);
-    }
-    </script>
   </body>
 </html>
