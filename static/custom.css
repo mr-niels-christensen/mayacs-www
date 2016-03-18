@@ -32,6 +32,10 @@
     direction: rtl;
 }
 
+body {
+    font-family: Georgia, Times, serif
+}
+
 .verdanatext {
     font-family: Verdana, Geneva, sans-serif;
 }
